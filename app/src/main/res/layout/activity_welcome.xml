@@ -9,19 +9,19 @@
     tools:context=".WelcomeActivity">
 
     <ImageView
-        android:id="@+id/imageView"
+        android:id="@+id/iv_welcome_welcomeimage"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:background="#00AAFF"
         android:scaleType="centerCrop"
-        app:layout_constraintBottom_toTopOf="@+id/guideline"
+        app:layout_constraintBottom_toTopOf="@+id/guide_hor_welcome"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/welcome_image" />
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/tv_welcome_title"
         style="@style/blue_label.title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -30,20 +30,20 @@
         android:layout_marginTop="48dp"
         android:text="@string/welcome_title"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/guideline" />
+        app:layout_constraintTop_toTopOf="@+id/guide_hor_welcome" />
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/tv_welcome_description"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:text="@string/welcome_description"
         android:textSize="16sp"
-        app:layout_constraintStart_toStartOf="@+id/textView"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
+        app:layout_constraintStart_toStartOf="@+id/tv_welcome_title"
+        app:layout_constraintTop_toBottomOf="@+id/tv_welcome_title" />
 
     <Button
-        android:id="@+id/welcomeContinueButton"
+        android:id="@+id/btn_welcome_continue"
         style="@style/button.dark.blue"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -51,10 +51,10 @@
         android:text="@string/welcome_continue"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+        app:layout_constraintTop_toBottomOf="@+id/tv_welcome_description" />
 
     <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/guideline"
+        android:id="@+id/guide_hor_welcome"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
